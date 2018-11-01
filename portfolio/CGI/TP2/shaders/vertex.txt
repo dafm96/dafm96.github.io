@@ -1,0 +1,29 @@
+attribute vec4 vPosition;
+
+ uniform mat4 mProjection;
+ uniform mat4 mModelView;
+ uniform mat4 mNormals;
+
+attribute vec3 vNormal;
+attribute vec4 vColor;
+varying vec4 fColor;
+  const vec3 dirDif = vec3(0., 0., 1.);
+  const vec3 dirHalf = vec3(-.4034, .259, .8776);
+
+void main(){
+    
+    gl_Position = mProjection *mModelView * vPosition;
+    
+     vec3 rotNorm = (mModelView * vec4(vNormal, 0.0)).xyz;
+     
+    float i = max(dot(rotNorm, dirDif), 0.0);
+    
+    fColor = vec4(0.9*i, 0.5*i, 0.0, 1.0);
+    
+    i = pow( max( 0.0, dot(rotNorm, dirHalf )), 60.0);
+    
+    fColor += vec4(i, i, i, 0.);
+   
+    gl_Position.z = gl_Position.z;
+   
+}

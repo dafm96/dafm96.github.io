@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>VII ENEEA - Encontro Nacional de Estudantes de Engenharia do Ambiente</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <script src="pub.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+
+    
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+              <a class="navbar-brand" href="../"><img src="images/logoOficialW.png"></a>
+      </div>
+      
+      <div id="navbar" class="collapse navbar-collapse">
+          
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="./">Home</a></li>
+          <li><a href="./programa">Programa</a></li>
+          <li><a href="./pacotes">Pacotes</a></li>
+          <li><a href="./localizacao">Localização</a></li>
+          <li><a href="./contactos">Contactos</a></li>
+          <li><a href="./apoios">Apoios</a></li>
+          
+          
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+  </nav>
+    
+    </head>
+<body>
+    <script src="pacotes/sum.js"></script>
+    <section class="jumbotron" id="home">
+        <img src="images/logodata1.png" id="logodata">
+        <div class="container" id="logotexto">
+            <br>
+            <div class="row text-left">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-6 text-justify">
+                <h1>APP 7ENEEA</h1>
+                <h3>Descarrega a app do encontro e carrega toda a informaçao que precisas no bolso</h3>
+                <a class="btn btn-lg btn-primary" href="https://drive.google.com/uc?export=download&id=0Bzo_NheUKWuPN1F2ZVk4eFhURzA" role="button">Clica aqui!</a>
+            </div>
+        </div>
+        
+        </div>
+    </section>
+    <br>
+        <section class="Jumbotron" id="calculatorB">
+    <div class="row">
+        <div class="col-sm-1"></div>
+    <div class="col-sm-5">
+    <h1>Pacote Green</h1>    
+    <h4>O Pacote Green inclui todas as palestas, debates e workshops presentes no programa, uma Atividade ao Ar Livre, uma Visita Técnica e a entrada na Mostra de Empresas.</h4> 
+    <h5>Dele fazem parte também todos os almoços e jantares incluindo a Green Night de sábado. 
+          <br><br>
+    E claro todas as surpresas do 7º Encontro Nacional de Estudantes de Engenharia do Ambiente!!</h5>
+    <h2 style="text-align:center" id="calculatorN">Total: <span id="total-base">50</span> ENEEA's</h2>
+    </div>
+        <div class="col-sm-1"></div>
+    <div class="col-sm-5">
+    <h1>+EXTRAS</h1>
+    <h5>Escolhe os extras clicando sobre eles e vê o seu valor ser acrescentado ao TOTAL.</h5>
+    <input type="checkbox" name="checkbox" id="cAutocarro" class="sumBase" value="15" data-toggle="checkbox"> <label for="cAutocarro"><h3>Autocarro</h3></label>
+        <br>
+    <input type="checkbox" name="checkbox" id="cAlojamento" class="sumBase" value="25" data-toggle="checkbox"/> <label for="cAlojamento"><h3>Alojamento</h3></label>
+    </div>
+    </div>    
+    </section>
+    
+    <section class="Jumbotron" id="calculatorF">
+    <div class="row">
+        <div class="col-sm-1"></div>
+    <div class="col-sm-5">
+    <h1>Pacote Eco</h1>
+    <h4> O Pacote Eco inclui TODAS as Palestras e Debates <br>E os almoços de todos os dias do Encontro.</h4>
+    <h2 style="text-align:center" id="calculatorN">Total: <span id="total-f">25</span> ENEEA's</h2>
+    </div>
+    <div class="col-sm-6">
+    <h1>+EXTRAS</h1>
+    <h5>Escolhe os extras clicando sobre eles e vê o seu valor ser acrescentado ao TOTAL.</h5>
+        <div class='row'>
+    <input type="checkbox" name="checkbox" id="cworkshop" class="sumf" value="7.5" data-toggle="checkbox"> <label for="cworkshop"><h3>Workshop</h3></label>
+            <h3 style="display:inline-block">  | </h3>
+        <input type="checkbox" name="checkbox" id="cgreennight" class="sumf" value="25" data-toggle="checkbox"> <label for="cgreennight"><h3>Green Night</h3></label>
+        </div>
+        <div class='row'>
+        <input type="checkbox" name="checkbox" id="cjantarc" class="sumf" value="7.5" data-toggle="checkbox"> <label for="cjantarc"><h3>Jantar Convívio</h3></label>
+            <h3 style="display:inline-block">  | </h3>
+    <input type="checkbox" name="checkbox" id="cempresas" class="sumf" value="7.5" data-toggle="checkbox"> <label for="cempresas"><h3>Mostra de Empresas</h3></label>
+        </div>
+        <div class='row'>
+        <input type="checkbox" name="checkbox" id="cvisita" class="sumf" value="15" data-toggle="checkbox"> <label for="cvisita"><h3>Visita Técnica</h3></label>
+            <h3 style="display:inline-block">  | </h3>
+        <input type="checkbox" name="checkbox" id="carlivre" class="sumf" value="7.5" data-toggle="checkbox"> <label for="carlivre"><h3>Atividade ao Ar Livre</h3></label>
+        </div>
+        
+    </div>
+    </div>
+    </section>
+    
+    
+    
+    <section class="jumbotron" id="imagemTexto">
+    <div class="container">
+    <div id="text">
+        
+        <h1>A FCT-UNL acolhe pela primeira vez o ENEEa!</h1>
+        <H2><br>Esta faculdade, situada em Almada, sendo muito próxima da capital e das belíssimas praias da Costa de Caparica, reune o <br></H2>
+        <h1>cenário ideal para fazer deste um grande evento!<br></h1>
+        </div>
+        </div>
+    </section>
+
+    
+
+    
+           
+<div id="youtube">
+    <div class="container">
+        <div class="embed-responsive embed-responsive-16by9" >
+            <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/dNCblExU5NE">
+            </iframe>
+        </div>
+    </div>
+</div>
+ 
+    
+    
+</body>   
+
+
+    
+    
+
+    
+<footer class="container">
+          <p>
+              <br>
+        &copy; 2016 ENEEA
+              <br>
+      </p>
+                <img id="ficon" src="images/Snapchat.svg"  data-toggle="modal" data-target="#myModal"/>
+<script>function centerModal() {
+    $(this).css('display', 'block');
+    var $dialog = $(this).find(".modal-dialog");
+    var offset = ($(window).height() - $dialog.height()) / 2;
+    // Center modal vertically in window
+    $dialog.css("margin-top", offset);
+}
+
+$('.modal').on('show.bs.modal', centerModal);
+$(window).on("resize", function () {
+    $('.modal:visible').each(centerModal);
+});</script>
+    
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-body">
+            <img src="images/Snap.png" class="img-responsive">
+        </div>
+    </div>
+  </div>
+</div>
+    
+    
+          <a  href="https://www.linkedin.com/in/eneea-vii-2016">
+                <img id="ficon" src="images/LinkedIn.svg"/>
+            </a>
+          
+          <a href="https://www.facebook.com/ENEEngAmbiente">
+                <img id="ficon" src="images/facebook.svg"/>
+            </a>
+          <a href="https://www.instagram.com/eneeanoinsta"><img id="ficon" src="images/Instagram_New.svg" ></a> 
+    <script src="pub.js"></script>
+    </footer>
+      
+
+
+</html>
+

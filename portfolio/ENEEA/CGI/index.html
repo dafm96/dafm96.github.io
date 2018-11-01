@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<script id="vertex-shader" type="x-shader/x-vertex">
+attribute vec4 vPosition;
+attribute vec4 vColor;
+varying vec4 fColor;
+uniform float offset;
+void main(){
+   
+    gl_Position = vPosition;
+    gl_Position.x = 0.5*-sin(offset) * vPosition.y + cos(offset) * vPosition.x;
+  	gl_Position.y =  0.5*sin(offset) * vPosition.x + cos(offset) * vPosition.y;
+    fColor = vColor; 
+}
+</script>
+<script id="fragment-shader" type="x-shader/x-fragment">
+precision mediump float;
+varying vec4 fColor;
+
+void main() {
+    
+    gl_FragColor = fColor;
+    
+}
+</script>
+<script type="text/javascript" src="./Common/webgl-utils.js"></script>
+<script type="text/javascript" src="./Common/initShaders.js"></script>
+<script type="text/javascript" src="./Common/MV.js"></script>
+<script type="text/javascript" src="./triangle.js"></script>
+</head>
+<body>
+<script>var elem = document.getElementById("freewha");
+elem.remove();</script>
+    <title>Triangle</title>
+    <canvas id="gl-canvas" width="1000" height="800" style="display: block; margin: 0 auto;">
+        Oops... your browser doesn't support the HTML5 canvas element"
+    </canvas>
+
+</body></html>
