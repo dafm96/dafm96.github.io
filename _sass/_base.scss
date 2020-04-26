@@ -61,7 +61,6 @@ p {
         margin-bottom: 10px;
     }
     .tagline {
-        list-style-type: none;
         color: rgba(256, 256, 256, 0.6);
         font-size: 16px;
         font-weight: 400;
@@ -212,6 +211,9 @@ p {
         }
         .item {
             margin-bottom: 15px;
+        }
+        .ul{
+            list-style-type:none;
         }
     }
 
