@@ -90,14 +90,16 @@ projects:
 
       - title: Youth Summer Camp - JOSV
         link:
-        - role: Volunteer
-          time: 2015  
+        roles: 
+          - role: Volunteer
+            time: 2015  
         tagline:
 
       - title: Scouts - CNE
         link:
-        - role: Member
-          time: Mar 2008 - Set 2014
+        roles:
+          - role: Member
+            time: "Mar 2008 - Set 2014"
         tagline:
 
 publications:
