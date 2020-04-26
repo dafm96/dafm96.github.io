@@ -72,11 +72,15 @@ projects:
     assignments:
       - title: anTUNiA - Students Musical Group of FCT NOVA
         link:
-        tagline: |
-            Secretary of General Meeting Board - 2020
-            Member of the Executive Board - 2019
-            Member of the Executive Board - 2018
-
+        roles:
+          - role: Secretary of General Meeting Board
+            time: 2020
+          - role: Member of the Executive Board
+            time: 2019
+          - role: Member of the Executive Board
+            time: 2018
+        tagline:
+          
       - title: AEFCT - FCT NOVA Students Union 
         link:
         tagline: |
