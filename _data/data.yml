@@ -71,7 +71,7 @@ projects:
     intro:
     assignments:
       - title: anTUNiA - Students Musical Group of FCT NOVA
-        link:
+        link: https://antunia.fct.unl.pt/
         roles:
           - role: Secretary of General Meeting Board
             time: 2020
@@ -117,7 +117,7 @@ publications:
         conference: Organization of International Festival of Students Musical Groups
 
 skills:
-    title: Skills &amp; Proficiency
+    title: Professional Skills
 
     toolset:
       - name: JAVA
