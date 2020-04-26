@@ -61,6 +61,7 @@ p {
         margin-bottom: 10px;
     }
     .tagline {
+        list-style-type: none;
         color: rgba(256, 256, 256, 0.6);
         font-size: 16px;
         font-weight: 400;
@@ -217,7 +218,7 @@ p {
     .publication-title {
         font-size: 16px;
         font-weight: 400;
-        color: $text-color;
+        color: darken($theme-color, 15%);
         margin-bottom: 1px;
     }
     .publication-authors {
