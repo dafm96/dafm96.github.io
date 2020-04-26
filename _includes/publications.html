@@ -13,20 +13,26 @@
   {% if publications.intro %}
   <div class="intro">
     {{ publications.intro | markdownify }}
-  </div><!--//intro-->
+  </div>
+  <!--//intro-->
   {% endif %}
 
   {% for publication in publications.papers %}
   <div class="item">
-    {% if publication.link %}
+    <div class="publication-title">
+
+      {% if publication.link %}
       <a href="{{ publication.link }}">{{ publication.title }}</a>
-    {% else %}
+      {% else %}
       {{ publication.title }}
-    {% endif %}
+      {% endif %}
+    </div>
     <div class="publication-authors">{{ publication.authors }}</div>
     <div class="publication-conference">{{ publication.conference }}</div>
-  </div><!--//item-->
+  </div>
+  <!--//item-->
   {% endfor %}
 
-</section><!--//section-->
+</section>
+<!--//section-->
 {% endif %}

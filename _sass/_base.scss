@@ -225,12 +225,14 @@ p {
         color: $text-grey;
         margin-bottom: 1px;
     }
+    .publication-title {
+        font-style: bold;
+    }
     .publications-section {
         .intro {
             margin-bottom: 30px;
         }
         .item {
-            font-weight: bold;
             margin-bottom: 15px;
         }
     }
