@@ -18,6 +18,12 @@
       <a href="http://{{ sidebar.website }}" target="_blank">{{ sidebar.website }}</a>
     </li>
     {% endif %}
+    
+    {% if sidebar.cv %}
+    <li class="website"><i class="fas fa-file-alt"></i>
+      <a href="http://{{ sidebar.cv }}" target="_blank">Curriculum Vitae</a>
+    </li>
+    {% endif %}
 
     {% if sidebar.linkedin %}
     <li class="linkedin"><i class="fab fa-linkedin"></i>
